@@ -12,10 +12,12 @@ protected:
 
 public:
     Pessoa(int id,string& nome);
-    ~Pessoa();
+    virtual ~Pessoa();
 
-    int getId();
-    string getNome();
+    virtual int getId();
+    virtual string getNome();
+
+    
 };
 
 #endif 

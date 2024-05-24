@@ -6,4 +6,11 @@ Funcionario::Funcionario(int id, string& nome, double salario): Pessoa(id, nome)
 
 Funcionario::~Funcionario() {}
 
+int Funcionario::getId(){
+    return id;  
+}
+
+string Funcionario::getNome(){
+    return nome;
+}
 double Funcionario::getSalario()  { return salario; }

@@ -9,6 +9,11 @@ int main() {
 
     // Adicionar produtos
     Produto p1(1, t1, 10.5, 100);
+    Produto p2(1, t1, 10.5, 100);
+
+    p2+=1;
+   
+    
     
     loja.adicionarProduto(p1);
     loja.listarProdutos();
@@ -19,6 +24,20 @@ int main() {
     // Cliente c2(2, "Cliente 2");
     // loja.adicionarCliente(c1);
     // loja.adicionarCliente(c2);
+    // loja.adicionarCliente(c2);
+    // loja.adicionarCliente(c2);
+    // loja.adicionarCliente(c2);
+    // loja.adicionarCliente(c2);
+
+
+
+    // // Adicionar funcionários
+
+    // // Adicionar funcionários
+
+    // // Adicionar funcionários
+
+    // // Adicionar funcionários
 
     // // Adicionar funcionários
     // Funcionario f1(1, "Funcionario 1", 3000.0);

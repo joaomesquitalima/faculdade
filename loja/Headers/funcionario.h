@@ -14,6 +14,10 @@ public:
     Funcionario(int id, string& nome, double salario);
     ~Funcionario();
 
+    int getId() override;  
+    string getNome() override;
+
+
     double getSalario();
 };
 

@@ -9,6 +9,9 @@ class Cliente : public Pessoa {
 public:
     Cliente(int id, string& nome);
     ~Cliente();
+
+    int getId() override;  
+    string getNome() override;
 };
 
 #endif 

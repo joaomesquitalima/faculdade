@@ -5,3 +5,11 @@ using namespace std;
 Cliente::Cliente(int id, string& nome) : Pessoa(id, nome) {}
 
 Cliente::~Cliente() {}
+
+int Cliente::getId(){
+    return id;  
+}
+
+string Cliente::getNome(){
+    return nome;
+}
