@@ -1,0 +1,1 @@
+g++ -o bin/loja.exe sources/pessoa.cpp sources/produto.cpp sources/loja.cpp sources/cliente.cpp sources/funcionario.cpp sources/main.cpp -I headers
