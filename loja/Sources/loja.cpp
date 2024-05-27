@@ -1,7 +1,8 @@
-#include "../Headers/loja.h"
+#include "../Headers/loja.hpp"
 #include <iostream>
 
 using namespace std;
+
 
 void Loja::adicionarProduto( Produto& produto) {
     produtos.push_back(produto);
@@ -19,25 +20,43 @@ void Loja::adicionarFuncionario( Funcionario& funcionario) {
 
 // lista os itens da loja
 void Loja::listarProdutos() {
-    for (int i = 0; i < produtos.size(); ++i) {
+    if(produtos.size() == 0){
+        cout << "Nenhum item listado" << endl;
+    }
+    else{
+    for (int i = 0; i < produtos.size(); i++) {
         Produto produto = produtos[i];
         cout << "ID: " << produto.getId() << ", Nome: " << produto.getNome() << ", Preço: " << produto.getPreco() << ", Estoque: " << produto.getEstoque() << endl;
-    }
+        }
+    }  
 }
 
 // lista os clientes da loja
 void Loja::listarClientes()  {
+    if(clientes.size() == 0){
+        cout << "Sem clientes" << endl;
+    }
+    else{
     for (int i=0;i < clientes.size(); i++) {
         Cliente cliente = clientes[i];
         cout << "ID: " << cliente.getId() << ", Nome: " << cliente.getNome() << endl;
+        }
     }
+    
 }
 
 // lista os funcionarios da loja
 void Loja::listarFuncionarios()  {
-    for (int i = 0; i < clientes.size(); i++) {
+    if(funcionarios.size() == 0){
+        cout << "Sem funcionarios" << endl;
+    }
+    else{
+    for (int i = 0; i < funcionarios.size(); i++) {
         Funcionario funcionario = funcionarios[i];
         cout << "ID: " << funcionario.getId() << ", Nome: " << funcionario.getNome() << ", Salário: " << funcionario.getSalario() << endl;
+        }
     }
 }
+
+
 

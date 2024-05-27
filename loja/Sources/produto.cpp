@@ -1,4 +1,4 @@
-#include "../Headers/produto.h"
+#include "../Headers/produto.hpp"
 #include <string.h>
 using namespace std;
 
@@ -18,5 +18,6 @@ bool Produto::operator==(Produto& another) {
 
 Produto& Produto::operator+=(int quantidade) {
     this->estoque += quantidade;
+    return *this;
     
 }

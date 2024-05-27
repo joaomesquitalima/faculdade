@@ -1,14 +1,14 @@
 #include <iostream>
-#include "../Headers/loja.h"
+#include "../Headers/loja.hpp"
 
 using namespace std;
 
 int main() {
     Loja loja;
     
-    Cliente c1(1,"Carlos");
-    Cliente c2(2,"Humberto");
-    Cliente c3(10,"Luigi");
+    Cliente c1(1,"Penny");
+    Cliente c2(2,"Leonard");
+    Cliente c3(10,"Howard");
     Cliente c4(19,"Sheldon");
     Cliente c5(45,"Raj");
 
@@ -18,7 +18,9 @@ int main() {
     loja.adicionarCliente(c4);
     loja.adicionarCliente(c5);
     
+    loja.listarClientes();
 
+    loja.listarFuncionarios();
     
     
 

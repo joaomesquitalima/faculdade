@@ -1,10 +1,10 @@
-#ifndef LOJA_H
-#define LOJA_H
+#ifndef LOJA_HPP
+#define LOJA_HPP
 
 #include <vector>
-#include "produto.h"
-#include "cliente.h"
-#include "funcionario.h"
+#include "produto.hpp"
+#include "cliente.hpp"
+#include "funcionario.hpp"
 
 using namespace std;
 

@@ -1,7 +1,7 @@
-#ifndef FUNCIONARIO_H
-#define FUNCIONARIO_H
+#ifndef FUNCIONARIO_HPP
+#define FUNCIONARIO_HPP
 
-#include "Pessoa.h"
+#include "Pessoa.hpp"
 
 
 using namespace std;

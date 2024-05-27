@@ -1,7 +1,8 @@
-#ifndef CLIENTE_H
-#define CLIENTE_H
+#ifndef CLIENTE_HPP
+#define CLIENTE_HPP
 
-#include "Pessoa.h"
+#include "Pessoa.hpp"
+#include <iostream>
 
 using namespace std;
 
