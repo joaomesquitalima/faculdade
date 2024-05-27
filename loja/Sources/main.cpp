@@ -5,39 +5,34 @@ using namespace std;
 
 int main() {
     Loja loja;
-    string t1 = "produto 1";
+    
+    Cliente c1(1,"Carlos");
+    Cliente c2(2,"Humberto");
+    Cliente c3(10,"Luigi");
+    Cliente c4(19,"Sheldon");
+    Cliente c5(45,"Raj");
 
-    // Adicionar produtos
-    Produto p1(1, t1, 10.5, 100);
-    Produto p2(1, t1, 10.5, 100);
+    loja.adicionarCliente(c1);
+    loja.adicionarCliente(c2);
+    loja.adicionarCliente(c3);
+    loja.adicionarCliente(c4);
+    loja.adicionarCliente(c5);
+    
 
-    p2+=1;
+    
+    
+
    
     
     
-    loja.adicionarProduto(p1);
-    loja.listarProdutos();
+    // loja.adicionarProduto(p1);
+    // loja.listarProdutos();
     
 
     // // Adicionar clientes
     // Cliente c1(1, "Cliente 1");
     // Cliente c2(2, "Cliente 2");
     // loja.adicionarCliente(c1);
-    // loja.adicionarCliente(c2);
-    // loja.adicionarCliente(c2);
-    // loja.adicionarCliente(c2);
-    // loja.adicionarCliente(c2);
-    // loja.adicionarCliente(c2);
-
-
-
-    // // Adicionar funcionários
-
-    // // Adicionar funcionários
-
-    // // Adicionar funcionários
-
-    // // Adicionar funcionários
 
     // // Adicionar funcionários
     // Funcionario f1(1, "Funcionario 1", 3000.0);

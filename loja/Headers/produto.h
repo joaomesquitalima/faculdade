@@ -13,7 +13,7 @@ private:
     int estoque;
 
 public:
-    Produto(int id, string& nome, double preco, int estoque);
+    Produto(int id, const string& nome, double preco, int estoque);
 
     int getId();
     string getNome();

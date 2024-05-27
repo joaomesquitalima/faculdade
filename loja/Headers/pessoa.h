@@ -11,7 +11,7 @@ protected:
     string nome;
 
 public:
-    Pessoa(int id,string& nome);
+    Pessoa(int id,const string& nome);
     virtual ~Pessoa();
 
     virtual int getId();

@@ -2,7 +2,7 @@
 
 using namespace std;
 
-Funcionario::Funcionario(int id, string& nome, double salario): Pessoa(id, nome), salario(salario) {}
+Funcionario::Funcionario(int id, const string& nome, double salario): Pessoa(id, nome), salario(salario) {}
 
 Funcionario::~Funcionario() {}
 

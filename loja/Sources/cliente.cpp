@@ -2,7 +2,7 @@
 
 using namespace std;
 
-Cliente::Cliente(int id, string& nome) : Pessoa(id, nome) {}
+Cliente::Cliente(int id, const string& nome) : Pessoa(id, nome) {}
 
 Cliente::~Cliente() {}
 

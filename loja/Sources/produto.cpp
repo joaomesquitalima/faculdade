@@ -2,7 +2,7 @@
 #include <string.h>
 using namespace std;
 
-Produto::Produto(int id, string& nome, double preco, int estoque)
+Produto::Produto(int id, const string& nome, double preco, int estoque)
     : id(id), nome(nome), preco(preco), estoque(estoque) {}
 
 int Produto::getId() { return id; }
@@ -12,11 +12,11 @@ int Produto::getEstoque() { return estoque; }
 
 void Produto::setEstoque(int quantidade) { estoque = quantidade; }
 
-bool Produto::operator==(Produto& outro) {
-    return id == outro.id;
+bool Produto::operator==(Produto& another) {
+    return id == another.id;
 }
 
 Produto& Produto::operator+=(int quantidade) {
-    estoque += quantidade;
-    return *this;
+    this->estoque += quantidade;
+    
 }

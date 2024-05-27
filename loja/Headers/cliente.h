@@ -7,7 +7,7 @@ using namespace std;
 
 class Cliente : public Pessoa {
 public:
-    Cliente(int id, string& nome);
+    Cliente(int id, const string& nome);
     ~Cliente();
 
     int getId() override;  
